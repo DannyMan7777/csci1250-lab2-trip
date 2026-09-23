@@ -44,5 +44,23 @@ System.Console.WriteLine("Total cost of pizzas (no nonnumeric values): " + pizza
 
 //Part 3: Paycheck
 
+const double TAX_RATE = 0.18;
+
+Console.Write("Enter the number of hours you will work this week (no nonnumeric values): ");
+double hoursWorked = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter your hourly pay (no nonnumeric values): ");
+double hourlyPay = Convert.ToDouble(Console.ReadLine());
+
+double grossPay = hoursWorked * hourlyPay;
+
+double taxWithheld = grossPay * TAX_RATE;
+
+double netPay = grossPay - taxWithheld;
+
+System.Console.WriteLine("This week's gross pay: " + grossPay.ToString("C"));
+System.Console.WriteLine("Tax withheld: " + taxWithheld.ToString("C"));
+System.Console.WriteLine("This week's net pay: " + netPay.ToString("C"));
+
 //Part 4: The Whole Trip
 
