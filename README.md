@@ -1,9 +1,9 @@
 **Trip Cost Calculator**
 -
 
-Name: Your Full Name
+Name: Daniel McKinney
 
-Course: CSCI 1250, Section 001
+Course: CSCI 1250, Section 002
 
 Assignment: Lab 02, Trip Calculator
 
