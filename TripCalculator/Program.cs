@@ -11,6 +11,7 @@
 //Part 1: Road Trip
 
 System.Console.WriteLine("  ============ Part 1: Road Trip ============");
+
 Console.Write("Enter the round trip mileage (no nondecimal values): ");
 double tripMileage = Convert.ToDouble(Console.ReadLine());
 
@@ -25,6 +26,7 @@ double gallonsNeeded = tripMileage / gasMileage;
 double fuelCost = gallonsNeeded * gasPrice;
 
 System.Console.WriteLine("\n  ===== RESULTS =====");
+
 System.Console.WriteLine("Gallons of gas needed: " + gallonsNeeded.ToString("F2"));
 System.Console.WriteLine("Cost of fuel: " + fuelCost.ToString("C"));
 
@@ -33,6 +35,7 @@ System.Console.WriteLine("Cost of fuel: " + fuelCost.ToString("C"));
 const int PIZZA_SLICES = 8;
 
 System.Console.WriteLine("\n  ============ Part 2: Pizza Party ============");
+
 Console.Write("Enter the number of people going (no nondecimal values): ");
 int numberGoing = Convert.ToInt32(Console.ReadLine());
 
@@ -51,6 +54,7 @@ int leftoverSlices = numberSlices % numberGoing;
 double pizzaCost = numberPizzas * pizzaPrice;
 
 System.Console.WriteLine("\n  ===== RESULTS =====");
+
 System.Console.WriteLine("Total slices of pizza: " + numberSlices.ToString("F0"));
 System.Console.WriteLine("Slices per person: " + ((int)slicesPerPerson).ToString("F0"));
 System.Console.WriteLine("Leftover slices: " + leftoverSlices.ToString("F0"));
@@ -61,6 +65,7 @@ System.Console.WriteLine("Total cost of pizzas: " + pizzaCost.ToString("C"));
 const double TAX_RATE = 0.18;
 
 System.Console.WriteLine("\n  ============ Part 3: Paycheck ============");
+
 Console.Write("Enter the number of hours you work each week (no nondecimal values): ");
 double hoursWorked = Convert.ToDouble(Console.ReadLine());
 
@@ -74,6 +79,7 @@ double taxWithheld = grossPay * TAX_RATE;
 double netPay = grossPay - taxWithheld;
 
 System.Console.WriteLine("\n  ===== RESULTS =====");
+
 System.Console.WriteLine("Your weekly gross pay: " + grossPay.ToString("C"));
 System.Console.WriteLine("Taxes withheld weekly: " + taxWithheld.ToString("C"));
 System.Console.WriteLine("Your weekly net pay: " + netPay.ToString("C"));
@@ -87,7 +93,7 @@ double tripIndividualCost = tripTotalCost / numberGoing;
 double netHourlyPay = netPay / hoursWorked;
 
 double hoursNeeded = tripIndividualCost / netHourlyPay;
-
+//TimeSpan displays hoursNeeded in the more practical format of hours and minutes
 TimeSpan hoursNeededFormatted = TimeSpan.FromHours(hoursNeeded);
 
 System.Console.WriteLine("\n  === FINAL RESULTS ===");
